@@ -4,9 +4,19 @@
  */
 
 function sleep_in(weekday,vacation){
-    return true;
+    if (weekday == true && vacation == true){
+        return true;
+    }
+    return true
+    ;
+
 }
 
 function string_times(str,num){
-    return str;
+    let result = "";
+    for (let i = 0; i < num; i++){
+        result += str;
+    }
+
+    return result;
 }
