@@ -3,18 +3,16 @@
  * Run after you make changes to re-run the tests with your new code.
  */
 
-function sleep_in(weekday,vacation){
-    if (weekday == true && vacation == true){
+function sleep_in(weekday, vacation) {
+    if (!weekday || vacation) {
         return true;
     }
-    return true
-    ;
-
+    return false;
 }
 
-function string_times(str,num){
+function string_times(str, num) {
     let result = "";
-    for (let i = 0; i < num; i++){
+    for (let i = 0; i < num; i++) {
         result += str;
     }
 
